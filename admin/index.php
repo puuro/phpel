@@ -61,7 +61,7 @@ exit();
 include "include.php";
 ?>
 <div class="otsikko">
-<h3>Better Than Others Framework v0.01</h3>
+<h3>Better Than Others Framework v0.01.1</h3>
 <?php echo $_SESSION['nimi']; ?>
 <a class="nappi" href="logout.php">Kirjaudu ulos</a>
 <a class="nappi" href="index.php">Etusivu</a>
