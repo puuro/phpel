@@ -3,12 +3,6 @@ function eki_shell($cmd){
 	echo "<li>";
 	echo "<b>".$cmd."</b><br>";
 	$val=shell_exec($cmd." 2>&1");
-	if($val!=""){
-		echo $val;
-		echo "</li>";
-		echo "</ul>";
-		exit();
-	}
 	echo "</li>";
 	return $val."<br>";
 }
