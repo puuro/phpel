@@ -3,7 +3,7 @@ include "check_auth.php";
 echo "<a class='nappi' href='index.php?q=create&aa=tosi'>Luo sivut</a><br>";
 echo "<a class='nappi' href='index.php?q=create&aa=testi'>Luo testisivut</a><br>";
 echo "<a class='nappi' href='index.php?action=renode'>Päivitä meta</a><br>";
-echo "<a class='nappi' href='index.php?action=update'>Päivitä työkalu uusimpaan versioon</a><br>";
+echo "<a class='nappi' href='index.php?q=update'>Päivitä työkalu uusimpaan versioon</a><br>";
 if($_SESSION['taso']==2){
 /*
 echo "<p>";
