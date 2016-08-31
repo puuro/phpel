@@ -8,7 +8,7 @@ function eki_shell($cmd){
 }
 echo "Päivitys...<br>";
 echo "<ul>";
-echo eki_shell("cd modules/update");
+chdir("modules/update");
 echo eki_shell("pwd");
 eki_shell("wget https://github.com/puuro/phpel/archive/master.zip");
 if(!is_file("master.zip")){
