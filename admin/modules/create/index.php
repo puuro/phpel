@@ -59,7 +59,7 @@ function print_children_of($parent){
 		$rootname=get_col("nimi", "elementit", $row['root']);
 		$sisalto=get_element_content($rootname, $row['id']);
 		$newfile=$filedir.$filename;
-		create_file($newfile, $sisalto, $listfile);
+		create_file($newfile, html_entity_decode($sisalto), $listfile);
 	
 		echo "OK<br>";
 	}
