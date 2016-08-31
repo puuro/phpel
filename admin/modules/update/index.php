@@ -4,8 +4,9 @@ function eki_shell($cmd){
 	echo "<b>".$cmd."</b><br>";
 	$val=shell_exec($cmd." 2>&1");
 	echo "</li>";
-	return $val."<br>";
+	return $val;
 }
+echo "Päivitäättör v2<br>";
 echo "Päivitys...<br>";
 echo "<ul>";
 chdir("modules/update");
@@ -15,6 +16,7 @@ $ln=count($parts);
 if(trim($parts[$ln-1])!="update" || $parts[$ln-2]!="modules" || $parts[$ln-3]!="admin"){
 	echo "<br>Väärä kansio: ".$pwd."<br>";
 	echo "Pitäisi olla ....../admin/modules/update";
+	exit();
 }
 
 eki_shell("wget https://github.com/puuro/phpel/archive/master.zip");

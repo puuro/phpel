@@ -1,5 +1,4 @@
-echo "cp -r update .."
+echo "Päivitetään Päivitäättör\r\n"
+cd ../update2
 cp -r update ..
-echo "rm -r update"
 rm -r update
-echo "OK"
