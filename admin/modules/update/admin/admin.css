@@ -1,0 +1,65 @@
+body{
+	padding:0;
+	margin:0;
+}
+#merkki{
+	min-width:10px;
+	min-height:10px;
+	max-width:10px;
+	max-height:10px;
+	border-radius:5px;
+	background-color:green;
+}
+#ace{
+	border:1px dashed gray;
+	min-width:400px;
+	min-height:300px;	
+	max-width:600px;
+	max-height:400px;
+}
+#sivut{
+	float:left;
+	background-color:#77ff77;
+	padding-left:20px;
+	min-height:100%;
+}
+#tools{
+	float:left;
+	min-height:100%;
+	max-width:600px;
+	padding-left:10px;
+}
+.nappi{
+	
+}
+.edit{
+	font-family:Monospace;
+	font-weight:bold;
+	font-size:16px;
+	padding-left:10px;
+	padding-right:10px;	
+}
+.edit:hover{
+}
+#sivut p{	
+	padding:1px;
+	margin:1px;
+}
+a:hover{
+	color:red;
+}
+.otsikko a{
+	font-family:"";
+	font-weight:normal;
+	font-size:16px;
+}
+.otsikko h3{
+	padding-bottom:0;
+	margin-bottom:0;
+	display:inline;
+}
+.otsikko{
+	margin:0;
+	padding:10px;	
+	background-color:#dddddd;
+}
