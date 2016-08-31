@@ -12,7 +12,7 @@ chdir("modules/update");
 $pwd=eki_shell("pwd");
 $parts=explode("/", $pwd);
 $ln=count($parts);
-if(trim($parts[$ln-1)!="update" || $parts[$ln-2]!="modules" || $parts[$ln-3]!="admin"){
+if(trim($parts[$ln-1])!="update" || $parts[$ln-2]!="modules" || $parts[$ln-3]!="admin"){
 	echo "<br>Väärä kansio: ".$pwd."<br>";
 	echo "Pitäisi olla ....../admin/modules/update";
 }
