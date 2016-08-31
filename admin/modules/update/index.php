@@ -9,7 +9,14 @@ function eki_shell($cmd){
 echo "Päivitys...<br>";
 echo "<ul>";
 chdir("modules/update");
-echo eki_shell("pwd");
+$pwd=eki_shell("pwd");
+$parts=explode("/", $pwd);
+$ln=count($parts);
+if(trim($parts[$ln-1)!="update" || $parts[$ln-2]!="modules" || $parts[$ln-3]!="admin"){
+	echo "<br>Väärä kansio: ".$pwd."<br>";
+	echo "Pitäisi olla ....../admin/modules/update";
+}
+
 eki_shell("wget https://github.com/puuro/phpel/archive/master.zip");
 if(!is_file("master.zip")){
 	echo "Lataus epäonnistui. ei master.zip tiedostoa kansiossa ".eki_shell("pwd").".";
