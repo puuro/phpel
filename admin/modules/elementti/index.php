@@ -26,7 +26,7 @@ if($_SESSION['taso']==2){
 	print_textrow("ID", "id", $elem_id, false);
 	print_textrow("Nimi", "nimi", $elem_nimi, true);
 	print_textrow("Kuvaus", "kuvaus", $elem_kuvaus, true);
-	print_textarearow("Sisältö", "sisalto", $elem_sisalto);
+	print_textarearow("Sisältö", "sisalto", htmlentities($elem_sisalto));
 	print_optionrow("Sivu", $list["id"], $list["col"], "sivu", $elem_sivu);
 	print_optionrow("Näkyvä", array("0", "1"), array("Ei", "On"), "nakyva", $elem_nakyva);
 	print_submitrow("post_elementti", "OK");
