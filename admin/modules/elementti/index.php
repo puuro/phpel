@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	}
 	});
 	save_sisalto();
+	saving=false;
 });
 var saving=false;
 var save_ready=false;
