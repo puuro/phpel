@@ -67,13 +67,12 @@ document.addEventListener('DOMContentLoaded', function(){
 		minLines:10,
 		maxLines:30
 	});
-	document.getElementById("merkki").style.backgroundColor="magenta";
 	save_sisalto();
     //editor.getSession().setMode("ace/mode/javascript");
 	document.getElementById("submit").addEventListener("click", function(event){
 	if(!save_ready){
-	document.getElementById("merkki").style.backgroundColor="magenta";
-	event.preventDefault();
+		document.getElementById("merkki").style.backgroundColor="magenta";
+		event.preventDefault();
 	}
 	});
 });
