@@ -68,18 +68,24 @@ document.addEventListener('DOMContentLoaded', function(){
 		maxLines:30
 	});
     //editor.getSession().setMode("ace/mode/javascript");
-	//document.getElementById("submit").addEventListener("click", function(){
-	//});
+	document.getElementById("submit").addEventListener("click", function(event){
+	if(!save_ready){
+	document.getElementById("merkki").style.backgroundColor="lightred";
+	event.preventDefault();
+	}
+	});
 });
 var saving=false;
+var save_ready=true;
 function form_update(again){
+	save_ready=false;
 	document.getElementById("merkki").style.backgroundColor="lightgreen";
 	if(!saving){
 		save_sisalto();
 		setTimeout(function(){	
 			save_sisalto();
 			saving=false;
-		}, 2000);
+		}, 1500);
 	}
 }
 function save_sisalto(){
@@ -96,5 +102,11 @@ function save_sisalto(){
 	var code=editor.getValue();
 	document.getElementById("textarea1").value=code;
 	document.getElementById("merkki").style.backgroundColor="green";
+	save_ready=true;
+}
+function form_submit(event){
+	if(!save_ready){
+		event.preventDefault();
+	}
 }
 </script>
