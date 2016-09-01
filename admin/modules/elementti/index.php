@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		minLines:10,
 		maxLines:30
 	});
-	save_sisalto();
     //editor.getSession().setMode("ace/mode/javascript");
 	document.getElementById("submit").addEventListener("click", function(event){
 	if(!save_ready){
