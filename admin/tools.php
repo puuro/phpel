@@ -15,6 +15,7 @@ echo "<p>";
 echo "<h3>Elementit</h3>";
 echo print_table("elementit", array("nimi_upper", "kuvaus","sivu:sivut:kuvaus"), "elementti");
 echo "</p>";
+/*
 echo "<p>";
 echo "<h3>Palikat</h3>";
 echo "<span style='font-weight:bold;color:darkgreen;'>";
@@ -23,7 +24,7 @@ foreach($blocks as $block){
 }
 echo "</span>";
 echo "</p>";
-
+*/
 echo "<h3>Käyttäjät</h3>";
 echo "<p>";
 echo print_table("kayttajat", array("nimi_upper", "taso"), "kayttaja");

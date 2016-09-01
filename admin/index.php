@@ -13,6 +13,7 @@ if(mysqli_connect_errno()){
 ?>
 <html>
 <head>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="admin.css">
 </head>
 <body>
@@ -61,7 +62,7 @@ exit();
 include "include.php";
 ?>
 <div class="otsikko">
-<h3>Better Than Others Framework v0.01.8</h3>
+<h3>Better Than Others Framework v0.01.9</h3>
 <?php echo $_SESSION['nimi']; ?>
 <a class="nappi" href="logout.php">Kirjaudu ulos</a>
 <a class="nappi" href="index.php">Etusivu</a>
