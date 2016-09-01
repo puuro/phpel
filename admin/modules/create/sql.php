@@ -4,15 +4,16 @@ function get_element_by_name($name, $pageid){
 	global $mysqli;
 
 	$result=$mysqli->query("SELECT * FROM ".$PREFIX."elementit WHERE nimi='".$name."' ORDER BY sivu DESC");
-	if($result->num_rows == 0){
+	//if($result->num_rows == 0){
 		//echo "'".$name."': ei löytynyt.";
-		return;
-	}
+		//return;
+	//}
 	while($row=$result->fetch_assoc()){
 		if($row['sivu']== $pageid || $row['sivu']==0){
 			return $row['sisalto'];
 		}
 	}
+	return "0";
 }
 function get_pages_by_parent($parent, $test){
 	global $mysqli;

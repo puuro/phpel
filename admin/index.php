@@ -60,9 +60,10 @@ if(!isset($_SESSION['authenticated']) || $_SESSION['authenticated']!=true){
 exit();
 }
 include "include.php";
+$versio=file_get_contents("versio");
 ?>
 <div class="otsikko">
-<h3>Better Than Others Framework v0.01.9</h3>
+<h3>Better Than Others Framework v<?=$versio?></h3>
 <?php echo $_SESSION['nimi']; ?>
 <a class="nappi" href="logout.php">Kirjaudu ulos</a>
 <a class="nappi" href="index.php">Etusivu</a>
