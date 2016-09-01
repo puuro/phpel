@@ -13,7 +13,7 @@ body{
 #ace{
 	border:1px dashed gray;
 	min-width:600px;
-	min-height:600px;	
+	min-height:100px;	
 }
 #sivut{
 	float:left;

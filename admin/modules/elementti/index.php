@@ -63,6 +63,10 @@ var editor;
 document.addEventListener('DOMContentLoaded', function(){
     editor = ace.edit("ace");
     editor.setTheme("ace/theme/crimson_editor");
+	editor.setOptions({
+		minLines:10,
+		maxLines:30
+	});
     //editor.getSession().setMode("ace/mode/javascript");
 	//document.getElementById("submit").addEventListener("click", function(){
 	//});
