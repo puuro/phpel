@@ -14,8 +14,6 @@ body{
 	border:1px dashed gray;
 	min-width:600px;
 	min-height:600px;	
-	max-width:600px;
-	max-height:400px;
 }
 #sivut{
 	float:left;
