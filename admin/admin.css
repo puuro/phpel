@@ -12,8 +12,8 @@ body{
 }
 #ace{
 	border:1px dashed gray;
-	min-width:400px;
-	min-height:300px;	
+	min-width:600px;
+	min-height:600px;	
 	max-width:600px;
 	max-height:400px;
 }
