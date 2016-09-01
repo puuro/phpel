@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function(){
     //editor.getSession().setMode("ace/mode/javascript");
 	document.getElementById("submit").addEventListener("click", function(event){
 	if(!save_ready){
-	document.getElementById("merkki").style.backgroundColor="indigo";
+	document.getElementById("merkki").style.backgroundColor="magenta";
 	event.preventDefault();
 	}
 	});
