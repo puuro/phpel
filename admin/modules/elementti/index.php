@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		maxLines:30
 	});
 	document.getElementById("merkki").style.backgroundColor="magenta";
+	save_sisalto();
     //editor.getSession().setMode("ace/mode/javascript");
 	document.getElementById("submit").addEventListener("click", function(event){
 	if(!save_ready){
@@ -78,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 var saving=false;
 var save_ready=false;
-save_sisalto();
 function form_update(again){
 	save_ready=false;
 	document.getElementById("merkki").style.backgroundColor="lightgreen";
