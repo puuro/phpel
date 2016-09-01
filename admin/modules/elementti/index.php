@@ -76,7 +76,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	});
 });
 var saving=false;
-var save_ready=true;
+var save_ready=false;
+document.getElementById("merkki").style.backgroundColor="magenta";
+save_sisalto();
 function form_update(again){
 	save_ready=false;
 	document.getElementById("merkki").style.backgroundColor="lightgreen";
