@@ -61,6 +61,7 @@ if($_SESSION['taso']==2){
 <script type="text/javascript">
 var editor;
 document.addEventListener('DOMContentLoaded', function(){
+	console.log("DOM loaded");
     editor = ace.edit("ace");
     editor.setTheme("ace/theme/crimson_editor");
 	editor.setOptions({
