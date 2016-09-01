@@ -72,11 +72,14 @@ document.addEventListener('DOMContentLoaded', function(){
 	if(!save_ready){
 		document.getElementById("merkki").style.backgroundColor="magenta";
 		event.preventDefault();
+		click=true;
+		
 	}
 	});
 });
 var saving=false;
 var save_ready=false;
+var click=false;
 function form_update(again){
 	save_ready=false;
 	document.getElementById("merkki").style.backgroundColor="lightgreen";
@@ -85,6 +88,9 @@ function form_update(again){
 		setTimeout(function(){	
 			save_sisalto();
 			saving=false;
+			if(click){
+				document.getElementById("submit").click();
+			}
 		}, 1500);
 	}
 }
