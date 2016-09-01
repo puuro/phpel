@@ -59,8 +59,9 @@ if($_SESSION['taso']==2){
 ?>
 <script src="lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
+var editor;
 document.addEventListener('DOMContentLoaded', function(){
-    var editor = ace.edit("ace");
+    editor = ace.edit("ace");
     editor.setTheme("ace/theme/crimson_editor");
     //editor.getSession().setMode("ace/mode/javascript");
 	//document.getElementById("submit").addEventListener("click", function(){
@@ -88,7 +89,8 @@ function save_sisalto(){
 			sisalto+="\r\n";
 	}
 	}
-	document.getElementById("textarea1").value=sisalto;
+	var code=editor.getValue();
+	document.getElementById("textarea1").value=code;
 	document.getElementById("merkki").style.backgroundColor="green";
 }
 </script>
