@@ -42,7 +42,7 @@ function crawl_element($id, $pageid, $top){
 		}
 	}
 	
-	if(preg_match_all('/#"([^"]+)"/', $sisalto, $m)){
+	if(preg_match_all('/##"([^"]+)"/', $sisalto, $m)){
 		foreach($m[1] as $match){
 			echo $match.": <br>";
 			if(!isset($elements[$match])){

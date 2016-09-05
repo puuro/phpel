@@ -95,7 +95,7 @@ function get_element_content($name, $pageid){
 		}
 	}
 	
-	if(preg_match_all('/#"([^"]+)"/', $sisalto, $m)){
+	if(preg_match_all('/##"([^"]+)"/', $sisalto, $m)){
 		foreach($m[1] as $match){
 			if(!isset($elements[strtolower($match)])){
 				$elements[strtolower($match)]=0;
@@ -109,7 +109,7 @@ function get_element_content($name, $pageid){
 				echo "Ei löydy elementtiä ".$match;
 				exit();
 			}
-			$sisalto=preg_replace('/#"'.$match.'"/', $inner_text, $sisalto,1);
+			$sisalto=preg_replace('/##"'.$match.'"/', $inner_text, $sisalto,1);
 		}
 	}
 	if(preg_match_all('/!"([^"]+)"/', $sisalto, $m)){
